@@ -1,0 +1,123 @@
+.sidebar {
+  width: 280px;
+  height: calc(100vh - 80px);
+  background-color: #333; /* Dark mode background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  position: relative;
+  top: 80px;
+  width: 280px;
+}
+
+.sidebar-light.open {
+  left: 0; /* Visible when open */
+}
+
+.arrow {
+  background-color: #555; /* Dark mode background color */
+  color: #fff;
+  border: transparent;
+  cursor: pointer;
+  position: fixed;
+  top: 350px;
+  z-index: 1000;
+  height: 200px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.sidebar-content {
+  padding-top: 50px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.sidebar-menu li {
+  position: relative;
+  padding: 15px 25px;
+  border-bottom: 1px solid #555;
+  border-left: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  transition: border-bottom-color 0.5s ease;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.sidebar-menu li:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2%;
+  height: 57px;
+  background-color: #307FE2;
+  border-radius: 12px;
+  transition: width 0.9s ease;
+}
+
+.Nlinks {
+  text-decoration: none;
+  color: #fff; /* Dark mode link color */
+}
+
+.sidebar-menu li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-menu li a {
+  color: #fff; /* Dark mode text color */
+  text-decoration: none;
+}
+
+.sidebar-menu li:hover a {
+  color: #307FE2; /* Dark mode hover link color */
+  font-weight: 500;
+}
+
+.sidebar-menu li:hover {
+  background-color: #555; /* Dark mode hover background color */
+  color: #fff;
+}
+
+.logout-container {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#1D6B40;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #059f00;
+}
+
+.logout-icon {
+  margin-right: 5px;
+}
+
+.logo {
+  padding-left: 40px;
+}

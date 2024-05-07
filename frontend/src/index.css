@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.displayscreen {
+  display: flex;
+  height: calc(100vh - 80px); /* Optional: Set the height of the parent container */
+}
+
+.sidecontent {
+  flex: 1; /* This will take up 20% of the width */
+  background-color: lightgray; /* Optional: Set background color */
+}
+
+.outlet {
+  margin-top: 100px;
+  flex: 4; /* This will take up 80% of the width */
+  background-color: lightblue; /* Optional: Set background color */
+}
